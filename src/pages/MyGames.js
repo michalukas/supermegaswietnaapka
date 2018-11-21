@@ -1,13 +1,18 @@
 import React from 'react'
+import Games from '../components/MyGames'
+import Contacts from '../components/contacts'
 
 const MyGames = () => 
-<div>
-<div className="my-games"/>
+<div className="my-games">
+<Games />
+<Contacts />
 <style jsx>{`
 .my-games {
     background: #1a1d42;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 70% 30%;
 }
 `}</style>
 </div>

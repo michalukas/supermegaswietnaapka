@@ -10,13 +10,14 @@ import SignUp from '../pages/SignUp'
 import MyGames from '../pages/MyGames'
 import ResetPassword from '../pages/ResetPassword'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 class RouterLinks extends React.Component<propType, void> {
   render() {
     return (
-      <div className="layout">
-        <Router>
+      <Router>
           <React.Fragment>
+            <div className="layout">
             <Header />
             <main>
               <Route exact path="/" component={Home} />
@@ -27,26 +28,19 @@ class RouterLinks extends React.Component<propType, void> {
               <Route path="/wyszukiwarka_graczy" component={GamersBrowser} />
               <Route path="/moje_gry" component={MyGames} />
             </main>
-            <footer className="footer">
-            </footer>
-          </React.Fragment>
-        </Router>
-        <style jsx>{`
+            <Footer />
+            <style jsx>{`
           .layout {
             width: 100%;
+            height:100%;
+            overflow:hidden;
+            display:grid;
+            grid-template-rows: 50px auto 10em;
           }
-          main {
-            height: 100%;
-          }
-          .footer {
-            background: #0e1021;
-            width: 100%;
-            height: 5em;
-            bottom: 0;
-            position: absolute;
-          }
-        `}</style>
+          `}</style>
       </div>
+          </React.Fragment>
+        </Router>
     )
   }
 }

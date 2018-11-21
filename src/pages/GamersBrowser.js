@@ -1,13 +1,18 @@
 import React from 'react'
+import FindGamers from '../components/FindGamers'
+import Contacts from '../components/contacts'
 
 const GamersBrowser = () => 
-<div>
-<div className="gamers-browser"/>
+<div className="gamers-browser">
+<FindGamers />
+<Contacts />
 <style jsx>{`
 .gamers-browser {
     background: #1a1d42;
     width: 100vw;
     height: 100vh;
+    display:grid;
+    grid-template-columns: 70% 30%;
 }
 `}</style>
 </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import {colors} from '../constants/colors'
 
 
 const Header = () => {
@@ -38,7 +39,7 @@ const Header = () => {
         <style jsx>{`
 
 .header {
-    background: #333ea0;
+    background: ${colors.header.bg};
     width: 100%;
     height: 50px;
     display: flex;
