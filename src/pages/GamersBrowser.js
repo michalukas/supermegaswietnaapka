@@ -10,7 +10,7 @@ const GamersBrowser = () =>
 .gamers-browser {
     background: #1a1d42;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     display:grid;
     grid-template-columns: 70% 30%;
 }

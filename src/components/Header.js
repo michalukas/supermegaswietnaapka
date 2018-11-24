@@ -30,7 +30,7 @@ const Header = () => {
               resetowanie_hasla
             </Link>
             <Link to="/wyszukiwarka_graczy" >
-            wyszukiwarka_graczys
+            wyszukiwarka_graczy
           </Link>
           <Link to="/moje_gry" >
           moje_gry

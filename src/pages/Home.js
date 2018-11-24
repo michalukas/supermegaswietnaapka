@@ -1,14 +1,14 @@
 import React from 'react'
 import MyGamesGallery from '../components/MyGamesGallery'
 import Contacts from '../components/contacts'
-import FindGamers from '../components/FindGamers'
+import GameBrowser from '../components/GameBrowser'
 
 
 const Home = () => 
 <div className="home">
 <div className="home-main">
+<GameBrowser />
 <MyGamesGallery />
-<FindGamers />
 </div>
 <Contacts />
 <style jsx>{`

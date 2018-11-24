@@ -5,8 +5,8 @@ const Contacts = () =>
 <style jsx>{`
 .contacts {
     background: grey;
-    width: 100%;
-    height: 100%;
+    margin:20px 50px 20px 20px;
+    height: 60%;
     border: 1px solid black;
 }
 `}</style>

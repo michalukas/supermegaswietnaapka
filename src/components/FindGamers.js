@@ -5,8 +5,7 @@ const FindGamers = () =>
 <style jsx>{`
 .find-gamers {
     background: grey;
-    width: 100%;
-    height: 100%;
+    margin: 20px 20px 20px 50px;
     border: 1px solid black;
 }
 `}</style>
