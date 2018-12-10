@@ -1,40 +1,66 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import {colors} from '../constants/colors'
 
-const Footer = () => 
-<div>
-<div className="footer">
-	<div className="Table">
-      <tr>
-          <td>Address</td>
-		  <td align="right"><b>STEAM4POOR APP</b></td>
-      </tr>
-	  <tr>
-          <td>132 Golden St.  San Francisco,  USA</td>
-		  <td align="right">Copyright SGGW &#169; 2018</td>
-      </tr>
-	</div>
 
-<style jsx>{`
-.footer {
-    background: ${colors.footer.bg};
-    color: ${colors.footer.font};
+const Header = () => {
+    return (
+        <div className="header">
+        <div className="title-wrapper">
+          <p className="App-title">LOGO</p>
+        </div>
+        <nav
+          className="nav-bar"
+        >
+          <Link to="/">
+            home
+          </Link>
+          <Link to="/rejestracja" >
+          rejestracja
+          </Link>
+          <Link to="/logowanie" >
+          logowanie
+          </Link>
+          <Link to="/przypomnienie_hasla" >
+          przypomnienie_hasla
+          </Link>
+            <Link
+              to="/resetowanie_hasla"
+            >
+              resetowanie_hasla
+            </Link>
+            <Link to="/wyszukiwarka_graczy" >
+            wyszukiwarka_graczy
+          </Link>
+          <Link to="/moje_gry" >
+          moje_gry
+          </Link>
+        </nav>
+        <style jsx>{`
+
+.header {
+    background: ${colors.header.bg};
     width: 100%;
-    height: 4em;
-    bottom: 0;
-    position: absolute;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    position: relative;
 }
-.Table{
-	margin: 7px 10px 10px 30px;
+a {
+  color: white;
+  margin: 10px 20px;
+  flex:2;
 }
-td {
-	color:white;
-	width: 980px;
-    height: 13px;
+.App-title {
+  margin:0;
+    margin: 5px 20px;
+    font-size: 25px;
 }
-
-`}</style>
-</div>
-</div>
-
-export default Footer
+         
+        `}</style>
+      </div>
+    )
+  }
+  
+  export default Header
