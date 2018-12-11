@@ -35,7 +35,7 @@ class RouterLinks extends React.Component<propType, void> {
             height:100%;
             overflow:hidden;
             display:grid;
-            grid-template-rows: 50px auto 10em;
+            grid-template-rows: 76px auto 4em;
           }
           `}</style>
       </div>
