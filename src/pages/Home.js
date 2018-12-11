@@ -24,7 +24,7 @@ const Home = () =>
 
 .home-main {
     display:grid;
-    grid-template-columnns: 100%;
+    grid-template-columns: 100%;
     grid-template-rows:  50% 50%;
     
 }
