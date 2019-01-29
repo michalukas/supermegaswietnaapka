@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'rest_framework.authtoken',
     'django_mysql',
+    'smsa_backend',
 ]
 
 MIDDLEWARE = [
@@ -76,14 +78,14 @@ WSGI_APPLICATION = 'smsa_backend.wsgi.application'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 DATABASES = {
-'default': {
-'ENGINE': 'django.db.backends.mysql',
-'NAME': 'prod_db',
-'USER': 'sggw',
-'PASSWORD': '1qaz!QAZ',
-'HOST': 'localhost',
-'PORT': '3306',
-}
+    'default': {
+    'ENGINE': 'django.db.backends.mysql',
+    'NAME': 'prod_db',
+    'USER': 'sggw',
+    'PASSWORD': '1qaz!QAZ',
+    'HOST': '89.65.237.78',
+    'PORT': '3306',
+    }
 }
 
 
@@ -106,11 +108,17 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 REST_FRAMEWORK = {
-    # Use Django's standard `django.contrib.auth` permissions,
-    # or allow read-only access for unauthenticated users.
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
-    ]
+
+        'rest_framework.permissions.IsAuthenticated',
+    ],
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10,
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ],
+
 }
 
 # Internationalization
