@@ -10,7 +10,7 @@ const ResetPassword = () =>
 <span className="information">Pierwsza platforma dla biednych ludzi</span>
 </div>
 <div className="reset-password_change">
-<SignComponent />
+<SignComponentResetPassword />
 </div>
 <style jsx>{`
 .information-wrapper {
@@ -42,8 +42,8 @@ const ResetPassword = () =>
 }
 .reset-password_change {
     width: 600px;
-    height: 400px;
-    margin-right: 10%;
+    height: 420px;
+    margin: 10% 40px 10px 60%;
 }
 `}</style>
 </div>
