@@ -1,5 +1,5 @@
 import React from 'react'
-import SignComponent from '../components/SignComponentResetPassword' 
+import SignComponentResetPassword from '../components/SignComponentResetPassword' 
 import Background from '../images/obrazek_strona_glowna'
 import sygnet from '../images/sygnet.svg' 
 
