@@ -44,7 +44,7 @@ const ForgotPassword = () =>
 .forgot-password_change {
     width: 600px;
     height: 320px;
-    margin: 10% 40px 10px 60%;
+    margin: 20% 0% 0% 10%;
 }
 `}</style>
 </div>
