@@ -1,5 +1,5 @@
 import React from 'react'
-import SignComponent from '../components/SignComponent'
+import SignComponent from '../components/SignComponentSignUp'
 import Background from '../images/obrazek_strona_glowna'
 import sygnet from '../images/sygnet.svg' 
 
@@ -40,8 +40,8 @@ const SignUp = () =>
 }
 .comp {
     width: 600px;
-    height: 400px;
-    margin-right: 10%;
+    height: 500px;
+    margin: 10% 40px 10px 60%;
 }
 `}</style>
 </div>
