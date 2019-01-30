@@ -41,7 +41,7 @@ const SignUp = () =>
 .comp {
     width: 600px;
     height: 500px;
-    margin: 10% 40px 10px 60%;
+    margin: 20% 0% 0% 10%;
 }
 `}</style>
 </div>
