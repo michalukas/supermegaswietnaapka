@@ -56,6 +56,11 @@ const Header = () => {
                     </Link>
                   </a>
                   <a class="dropdown-item" href="#">
+                    <Link to="/logowanie" >
+                      Logowanie
+                    </Link>
+                  </a>	
+                  <a class="dropdown-item" href="#">
                     <Link to="/rejestracja" >
                       Rejestracja
                     </Link>
