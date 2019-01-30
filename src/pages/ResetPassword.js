@@ -43,7 +43,7 @@ const ResetPassword = () =>
 .reset-password_change {
     width: 600px;
     height: 420px;
-    margin: 10% 40px 10px 60%;
+    margin: 20% 0% 0% 10%;
 }
 `}</style>
 </div>
