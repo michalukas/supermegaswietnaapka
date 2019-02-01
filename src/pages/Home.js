@@ -2,6 +2,7 @@ import React from 'react'
 import MyGamesGallery from '../components/MyGamesGallery'
 import Contacts from '../components/contacts'
 import GameBrowser from '../components/GameBrowser'
+import {colors} from '../constants/colors'
 
 
 const Home = () => 
@@ -13,19 +14,20 @@ const Home = () =>
 <Contacts />
 <style jsx>{`
 .home {
-    background: #1a1d42;
+    background: ${colors.pageBg};
     width: 100vw;
-    height:100%;
+    height: 100%;
     display: grid;
     grid-template-columns: 70% 30%;
-    grid-template-rows:  100%;
 
 }
 
 .home-main {
+    margin:20px 0;
+    overflow:auto;
     display:grid;
     grid-template-columns: 100%;
-    grid-template-rows:  50% 50%;
+    grid-template-rows:  70% 70%;
     
 }
 `}</style>

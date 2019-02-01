@@ -5,7 +5,7 @@ const GameGallery = () =>
 <style jsx>{`
 .game-gallery {
     background: grey;
-    margin: 20px 20px 20px 50px;
+    margin: 20px 20px 0px 50px;
     border: 1px solid black;
 }
 `}</style>
