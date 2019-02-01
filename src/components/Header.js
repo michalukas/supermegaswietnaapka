@@ -6,11 +6,13 @@ import ustawienia from '../images/ustawienia.svg'
 import sygnet from '../images/sygnet.svg'
 import lupa from '../images/lupa.svg'
 
+
+
 const Header = () => {
     return (
       <div className>
         <nav class="navbar navbar-expand-lg header  " >
-          <a class="navbar-brand " href="#"><img class="logo" src={logo}></img></a>
+          <a class="navbar-brand " href="/strona_domowa"><img class="logo" src={logo}></img></a>
          
           <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon "></span>
