@@ -4,3 +4,16 @@
   overflow: hidden;
 }
 
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #01002d; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+background:#020142; 
+}
+
