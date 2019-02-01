@@ -81,7 +81,7 @@ const GameGallery = () =>
     <p id="myGamesContainer"><Link id="mygamesButton" to="/moje_gry" ><c>Przeglądaj Gry</c></Link></p>
     
 <style jsx>{`
-<<<<<<< HEAD
+
 
     #myGamesContainer{
         text-align:center;
@@ -272,13 +272,7 @@ const GameGallery = () =>
         
     }
 
-=======
-.game-gallery {
-    background: grey;
-    margin: 20px 20px 0px 50px;
-    border: 1px solid black;
-}
->>>>>>> d898b4d70d942e74ed6845c90315a9f3a53fa2d1
+
 `}</style>
 
 

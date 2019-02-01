@@ -34,13 +34,13 @@ const Header = () => {
                 <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <img class="icony" src={sygnet}/> 
                 </a>
-                <div class="dropdown-menu header dropdown-menu-right" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">
+                <div  class="dropdown-menu header dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/moje_gry">
                     <Link to="/moje_gry" >
                       Moje Gry
                     </Link>
                     </a>
-                  <a class="dropdown-item" href="#">
+                  <a class="dropdown-item" href="/wyszukiwarka_graczy">
                     <Link to="/wyszukiwarka_graczy" >
                       Wyszukaj gracza
                     </Link>
@@ -54,28 +54,29 @@ const Header = () => {
                 </a>
                 <div class="dropdown-menu header dropdown-menu-right" aria-labelledby="navbarDropdown">
                   
-                  <a class="dropdown-item" href="#">
+
+                  <a class="dropdown-item" href="/">
                   
                     <Link to="/">
                       Strona domowa
                     </Link>
                   </a>
-                  <a class="dropdown-item" href="#">
+                  <a class="dropdown-item" href="/logowanie">
                     <Link to="/logowanie" >
                       Logowanie
                     </Link>
                   </a>	
-                  <a class="dropdown-item" href="#">
+                  <a class="dropdown-item" href="/rejestracja">
                     <Link to="/rejestracja" >
                       Rejestracja
                     </Link>
                   </a>
-                  <a class="dropdown-item" href="#">
+                  <a class="dropdown-item" href="/przypomnienie_hasla">
                     <Link to="/przypomnienie_hasla" >
                      Przypomnienie Hasła
                     </Link>
                   </a>
-                  <a class="dropdown-item" href="#">
+                  <a class="dropdown-item" href="/resetowanie_hasla">
                     <Link to="/resetowanie_hasla" >
                       Reset Hasła
                     </Link>
@@ -88,6 +89,10 @@ const Header = () => {
         </nav>
         <style jsx>{`
 
+          a:hover {
+            color: white;
+            text-decoration: none;
+          }
           .header {
               background: ${colors.header.bg};
               color: white;     
@@ -119,6 +124,11 @@ const Header = () => {
               
           }
 
+          .dropdown-item:focus, .dropdown-item:hover {
+            color: #16181b;
+            text-decoration: none;
+            background-color: #847ECB;
+        }
       
 
          
