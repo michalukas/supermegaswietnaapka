@@ -22,6 +22,7 @@ class RouterLinks extends React.Component<propType, void> {
             <main>
               <Route exact path="/" component={Home} />
               <Route path="/rejestracja" component={SignUp} />
+              <Route path="/strona_domowa" component={Home} />
               <Route path="/logowanie" component={SignIn} />
               <Route path="/przypomnienie_hasla" component={ForgotPassword} />
               <Route path="/resetowanie_hasla" component={ResetPassword} />
