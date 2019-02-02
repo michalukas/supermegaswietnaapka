@@ -31,6 +31,9 @@ class RouterLinks extends React.Component<propType, void> {
             </main>
             <Footer />
             <style jsx>{`
+            main{
+              overflow:auto;
+            }
           .layout {
             width: 100%;
             height:100%;

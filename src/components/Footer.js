@@ -19,6 +19,7 @@ const Footer = () =>
     background: ${colors.footer.bg};
     color: ${colors.footer.font};
     width: 100%;
+    position:relative;
 }
 .Table{
 	margin: 7px 40px 10px 30px;

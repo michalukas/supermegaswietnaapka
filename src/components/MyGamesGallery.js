@@ -124,8 +124,8 @@ const GameGallery = () =>
     }
     
     .game-gallery {
-        background: #1a1d42;
-        margin: 20px 20px 20px 50px;
+        
+        margin: 00px 20px 20px 50px;
         //border: 1px solid black;
         //overflow: hidden;
     }
@@ -136,7 +136,7 @@ const GameGallery = () =>
     
     .row {
         overflow: hidden;
-        height:77%;
+        height:auto;
         width:100%;
         margin-left:0px;
         
@@ -242,12 +242,12 @@ const GameGallery = () =>
         
         0%  { left: 30px; }
         15% { left: 30px; }
-        25% { left: -11%; }
-        35% { left: -17%; }
+        25% { left: -6%; }
+        35% { left: -12%; }
         50% { left: -23%; }
-        60% { left: -23%; }
-        70% { left: -17%; }
-        80% { left: -11%; }
+        60% { left: -12%; }
+        70% { left: -5%; }
+        80% { left:  30px; }
         100% { left: 30px; }
 
     }

@@ -19,12 +19,12 @@ const Home = () =>
     height: 100%;
     display: grid;
     grid-template-columns: 70% 30%;
-
+    overflow:auto;
 }
 
 .home-main {
     margin:20px 0;
-    overflow:auto;
+    
     display:grid;
     grid-template-columns: 100%;
     grid-template-rows:  70% 70%;
