@@ -2,16 +2,36 @@ import React from 'react'
 import {colors} from '../constants/colors'
 
 const data = [
-    [1,'+',3,4],[1,'+',3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4]
+    [1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4]
 ]
 
-const ListComponent = ({columnAmount, rowData, rowStyle, table }) => 
+const ListComponent = ({columnAmount, rowData, style, table, header }) => 
 <div className="list-component">
-{data.map(el => <div className="list-row">{el.map(e => <div className="cell">
+<div className="header-list" style={style ? style.header || {} : {}}>
+{header && header.map(e => <div className="header-element">{e}</div>)}
+</div>
+<div className="list-wrapper">
+{data.map(el => <div className="list-row" style={style ? style.row || {} : {}}>{el.map(e => <div className="cell">
 {e}
 </div>)}</div>)}
+</div>
 <style jsx>{`
 .list-component {
+    display: grid;
+    grid-template-rows: ${header ? '30px auto' : 'auto'};
+}
+.header-list {
+    font-family: Lato;
+    color: white;
+    display: grid;
+    grid-template-columns: 50px 10% 10% auto;
+    
+}
+.header-element {
+    display: grid;
+    place-content: center;
+}
+.list-wrapper {
     overflow: auto;
     display: grid;
     grid-auto-rows: 60px;

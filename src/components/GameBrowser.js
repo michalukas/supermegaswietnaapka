@@ -5,7 +5,7 @@ import ListComponent from './ListComponent'
 const GameBroser = () => 
 <div className="game-browser">
 <div className="title">Wyszukiwarka gier</div>
-<div className="list-wrapper">
+<div className="list-wrapp">
 <input type="text" className="search" placeholder="Szukaj..."/>
 <ListComponent />
 </div>
@@ -41,7 +41,7 @@ border-radius: 2px;
     border-bottom: 2px solid ${colors.myGames.another};
     padding: 10px 50px;
 }
-.list-wrapper {
+.list-wrapp {
     display: grid;
     grid-template-rows: 100px 300px;
     grid-template-columns: 100%; 

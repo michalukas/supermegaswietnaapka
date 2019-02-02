@@ -1,18 +1,21 @@
 import React from 'react'
 import Games from '../components/MyGames'
 import Contacts from '../components/contacts'
+import {colors} from '../constants/colors'
 
 const MyGames = () => 
 <div className="my-games">
 <Games />
 <Contacts />
 <style jsx>{`
+
 .my-games {
-    background: #1a1d42;
+    overflow:hidden;
+    background: ${colors.pageBg};
     width: 100vw;
     height: 100%;
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 80% 20%;
 }
 `}</style>
 </div>

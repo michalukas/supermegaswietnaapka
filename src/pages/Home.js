@@ -23,8 +23,7 @@ const Home = () =>
 }
 
 .home-main {
-    margin:20px 0;
-    
+    margin:20px 0
     display:grid;
     grid-template-columns: 100%;
     grid-template-rows:  70% 70%;
